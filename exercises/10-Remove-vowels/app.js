@@ -1,11 +1,10 @@
 const rapid = (myString) => {
     // Your code goes here
-   /* prueba 
-   let myNewString;
+    
+   let myNewString = "";
     for (let i=0;i<myString.length;i++){
-        myNewString = myString.length(i).replace(/[aeiou]/i,"");
-    }*/
-   let myNewString = myString.replace(/[aeiou]/gi,"");
+        myNewString = myNewString + myString.charAt(i).replace(/[aeiou]/i,"");
+    } 
    let myNewerString = myNewString.toUpperCase();
     return myNewerString
 };
